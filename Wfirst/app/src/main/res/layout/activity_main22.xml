@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <EditText
+        android:id="@+id/ty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter your name"
+        android:inputType="text" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:id="@+id/cream"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="cream"
+        android:layout_marginLeft="16sp"
+        android:onClick="tick"
+        android:textSize="25sp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:id="@+id/choco"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:text="chococlate"
+        android:layout_marginLeft="16sp"
+        android:onClick="tick"
+        android:textSize="25sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quantity"
+        android:padding="20dp"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:onClick="add"
+        android:layout_marginLeft="12dp"
+        android:text="+"
+        style="?android:attr/borderlessButtonStyle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/q"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        android:text="0"
+        android:textSize="20sp"
+        android:paddingBottom="5dp"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:onClick="sub"
+        android:text="-" />
+        </LinearLayout>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="order summary"
+        android:layout_marginLeft="12dp"
+    android:layout_marginTop="2dp"
+    android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/er"
+        android:padding="10dp"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="submitOrder"
+        android:text="ORDER" />
+
+</LinearLayout>
+
+    </ScrollView>
