@@ -1,0 +1,6 @@
+<android.support.constraint.ConstraintLayout ...>
+             <Button android:id="@+id/button" ...
+                 app:layout_constraintLeft_toLeftOf="parent"
+                 app:layout_constraintRight_toRightOf="parent/>
+         </>
+         
